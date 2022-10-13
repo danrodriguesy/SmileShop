@@ -1,0 +1,169 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {   
+    font-family: Montserrat;
+}
+
+/* header */
+header {
+    background-image: url('../images/background.png');
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    height: 810px;
+}
+header > div {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 41px;
+}
+header > img {
+    width: auto;
+}
+header > div > h1 {
+    margin-top: 35px;
+    font-size: 36px;
+    color: #F4ACB1;
+    font-weight: 500;
+}
+header > div > div#descricao {
+    margin-top: 5px;
+}
+header > div > #descricao > h2 { 
+    font-size: 18px;
+    font-weight: 100;
+    color: #FFF;
+}
+header > div > #descricao > h2:first-child { 
+    font-weight: 500;
+}
+
+/* main */
+main {
+    min-height: 400px;
+    background-color: #391E4F;
+    position: absolute;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+main > form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 10px;
+    justify-content: center;
+    align-items: center;
+}
+main > form > label {
+    color: #FFFFFE;
+    margin-bottom: 9px;
+    font-size: 12pt;
+    text-align: center;
+    font-weight: 500;
+    margin-top: 30px;
+}
+main > form > input.campos {
+    background: none;
+    border: 2px solid #FFF;
+    border-radius: 20px;
+    outline: none;
+    height: 50px;
+    width: 300px;
+    color: #FFF;
+    padding: 0 20px;
+    font-size: 18px;
+}
+
+main > form > #box-termo-aceite {
+    margin-top: 30px;
+    display: flex;
+    align-items: unset;
+}
+main > form > #box-termo-aceite > input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    margin: 0;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid #FFF;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+    display: grid;
+    place-content: center;
+}
+main > form > #box-termo-aceite > input[type="radio"]::before {
+    content: "";
+    width: 0.65em;
+    height: 0.65em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    background-color: #FFF;
+}
+main > form > #box-termo-aceite >  input[type=radio]:checked::before { 
+    transform: scale(1);
+}
+main > form > #box-termo-aceite > span {
+    font-size: 13px;
+    margin-left: 8px;
+    color: #FFF;
+    font-weight: 300;
+}
+main > form > button {
+    margin-top: 44px;
+    background: #34DBE8;
+    width: 150px;
+    height: 50px;
+    border: 0;
+    border-radius: 20px;
+    font-size: 17px;
+    font-weight: 500;
+    color: #3E184F;
+    margin-bottom: 31px;
+    cursor: pointer;
+}
+
+/* estilo para celulares */
+@media (max-width: 600px){
+    header {
+        background-position: top;
+        background-size: 1500px 810px;
+    }
+    header > div > h1 {
+        font-size: 24px;
+    }
+    header > div > div#descricao {
+        margin-top: 12px;
+    }
+    header > div > #descricao > h2 {
+        font-size: 14px;
+        margin: 6px auto;
+    }
+    main > form > #box-termo-aceite > span {
+        text-align: justify;
+        margin-right: 29px;
+        margin-left: 16px;
+    }
+    main > form > #box-termo-aceite > input[type="radio"] {
+        margin-left: 25px;
+        margin-top: 7px;
+        width: 1em;
+        height: 1em;
+        outline: none;
+    }
+    main > form > input.campos {
+        width: 90%;
+    }   
+}

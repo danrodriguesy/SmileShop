@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <link rel="icon" type="image/x-icon" href="./images/favicon.ico">
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- fonte global -->
+        <link 
+            href="https://fonts.googleapis.com/css?family=Montserrat:100,200,300,400,500,700,900|Ubuntu:400,500,700" 
+            rel="stylesheet">
+        <!-- CSS -->
+        <link href="./css/main.css" rel="stylesheet">
+        <!-- jQuery -->
+        <script src="./js/jquery.min.js"></script>
+        <script src="./js/jquery.mask.min.js"></script>
+        <script src="./js/main.js" defer="defer"></script>
+        <title>SmileShop</title>
+    </head>
+    <body>
+        <header>
+            <div>
+                <img src="./images/logo.png" alt="Logo da empresa SmileShop" />
+                <h1>CRIE SEU E-COMMERCE</h1>
+                <div id="descricao">
+                    <h2>Chegou a hora de criar seu e-commerce com os especialistas da SmileShop.</h2>
+                    <h2>Preencha o formulário abaixo que um consultor entrará em contato!</h2>
+                </div>
+            </div>
+        </header>
+        <main>
+            <form>
+                <label>Nome</label>
+                <input type="text" class="campos" name="nome" />
+                
+                <label>E-mail</label>
+                <input type="text" class="campos" name="email" />
+
+                <label>WhatsApp</label>
+                <input type="text" class="campos whatsapp" name="whatsapp"  />
+                
+                <div id="box-termo-aceite">
+                    <input type="radio" name="autorizarContato" id="radio" value="0">
+                    <span>Eu autorizo um consultar da Smile entrar em contato via Whatsapp</span>
+                </div>
+                <button value="enviar">ENVIAR</button>
+            </form>
+        </main>
+    </body>
+</html>
